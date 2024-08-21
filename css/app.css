@@ -1,0 +1,128 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    font-weight: 100;
+    background: url('../images/main.jpg') center no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color: rgb(252, 249, 249); 
+}
+
+html {
+  height: 100%;
+}
+
+#content {
+  text-align: left;
+  padding-top: 1%;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+         0px 8px 13px rgba(0,0,0,0.1),
+         0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5em;
+}
+
+
+hr {
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+
+#askbutton {
+    position: fixed;
+    right: 40px;
+    top: 30%;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+.header {
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #101596, #9fc6c6) repeat scroll 0 0;
+   border-radius: 0px 0px 0px 0px;
+   padding: 3px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+/* brands */
+.brands {
+  min-height: 100vh;
+  padding: 7rem 10%;
+  position: relative;
+  overflow: hidden;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+.brand:last-child {
+  margin-bottom: 0rem;
+}
+.brand h2 {
+  font-size: 60px;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+.brand img {
+  height: 15rem;
+}
+.brand .img {
+  flex: 1;
+}
+.brands .desc {
+  flex: 1;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.brand.row-reverse .img {
+  display: flex;
+  justify-content: flex-end;
+}
+.brands .bottom-img {
+  position: absolute;
+  right: -15rem;
+  bottom: -4rem;
+  z-index: 2;
+}
+
+
+
+
+.chatbox {
+  border-radius:0px 0px 0px 0px ;
+}
+
+.chatcontentcontainer {
+
+   position: fixed;
+	 left: 500px; 
+	 top: 40px;
+   z-index: 1000;
+
+}
+
+
+#closebutton{
+cursor: pointer;
+}
