@@ -14,39 +14,9 @@
     <!-- <link rel="stylesheet" type="text/css" href="../css/chatbot.css"> -->
 
 </head>
+
 <body>
 
-	<script>
-var div = document.createElement('div');
-div.className = 'fb-customerchat';
-div.setAttribute('page_id', '331545744198571');
-div.setAttribute('ref', '');
-document.body.appendChild(div);
-window.fbMessengerPlugins = window.fbMessengerPlugins || {
-init: function () {
-	FB.init({
-		appId            : '1678638095724206',
-		autoLogAppEvents : true,
-		xfbml            : true,
-		version          : 'v3.0'
-	});
-}, callable: []
-};
-window.fbAsyncInit = window.fbAsyncInit || function () {
-window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
-window.fbMessengerPlugins.init();
-};
-setTimeout(function () {
-(function (d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) { return; }
-	js = d.createElement(s);
-	js.id = id;
-	js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-}, 0);
-</script>
 
 <nav class="navbar navbar-default">
   <div class="container">
@@ -65,10 +35,10 @@ setTimeout(function () {
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
        	<li class="active"><a href="index.html"><b>Home</b></a></li>
-        <!-- <li><a href="menu.html"><b>Menu</b></a></li>
+        <li><a href="about.html"><b>About Us</b></a>
+        <li><a href="menu.html"><b>Menu</b></a>
         <li><a href="promotion.html"><b>Promotion</b></a></li>
-        <li><a href="location.html"><b>Location</b></a></li>
-        <li><a href="contactus.html"><b>Contact Us</b></a></li> -->
+        <li><a href="reservation.html"><b>Make a reservsation</b></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -78,8 +48,9 @@ setTimeout(function () {
 		<div class="row">
 			<div class="col-lg-12">
 				<div id="content">
-
-
+          <h1>A MODERN TRATTORIA</h1>
+          <h2>THAT SITS IN THE HEART OF HOLLAND VILLAGE</h2>
+          <h3>La Nonna, meaning “The Grandmother” in Italian, serves traditional Italian country cuisine, much like what grandma would usually prepare in an unpretentious and inviting dining space.</h3> 
  				</div>
 			</div>
 		</div>
@@ -99,5 +70,10 @@ setTimeout(function () {
  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+ <footer>
+  <div class="container">
+      <p><font color="black"><b>&copy; 2024 La Nonna. All rights reserved.</font></b></p>
+  </div>
+</footer>
 </body>
 </html>
