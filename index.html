@@ -1,79 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Demo Coffee House</title>
-
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-	<link rel="stylesheet" type="text/css" href="css/app.css">
-
-    <!-- <link rel="stylesheet" type="text/css" href="../css/chatbot.css"> -->
+    <meta charset="UTF-8"> 
+    <title>Demo Coffee House</title>
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
+<style>
+    .image-button {
+        width: 57px;
+        height: 57px;
+        background-image: url('images/test.png');
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
 <body>
-
-
-<nav class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><b>Demo Coffee House</b></a>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>Demo Coffee House</h5>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Menu</a></li>
+                <li><a>Promotion</a></li>
+                <li><a>Reservation</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="content">
+                <h2>La Nonna</h2>
+                <p><b>A MODERN TRATTORIA</b></p>
+                <p><b>THAT SITS IN THE HEART OF HOLLAND VILLAGE</b></p>
+                <div class="btn">
+                    <a href="#">Learn More</a>
+                    <a href="#">Sign up</a>
+                </div>                  
+            </div>
+        </div>
     </div>
+    
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-       	<li class="active"><a href="index.html"><b>Home</b></a></li>
-        <li><a href="about.html"><b>About Us</b></a>
-        <li><a href="menu.html"><b>Menu</b></a>
-        <li><a href="promotion.html"><b>Promotion</b></a></li>
-        <li><a href="reservation.html"><b>Make a reservsation</b></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+  <!-- Chatbot -->
+  <div class="chatbot-icon">
+    <!-- <button class="image-button" onclick="myFunction()"><img src="images/demo_coffee_house.png" id="chatbot-icon-image"></button> -->
+    <button class="image-button" onclick="myFunction()"></button>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div id="content">
-          <h1>A MODERN TRATTORIA</h1>
-          <h2>THAT SITS IN THE HEART OF HOLLAND VILLAGE</h2>
-          <h3>La Nonna, meaning “The Grandmother” in Italian, serves traditional Italian country cuisine, much like what grandma would usually prepare in an unpretentious and inviting dining space.</h3> 
- 				</div>
-			</div>
-		</div>
-	</div>
+</div>
+  
+    <script>
+    function myFunction() {
+      window.open("bot.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+    }
+    </script>
+  
+  
+   <!-- Chatbot Icon -->
+ <!--   <div class="chatbot-icon">
+    <img src="./images/demo_coffee_house.png" alt="Chatbot Icon" id="chatbot-icon-image">
+    <button onclick="myFunction()"><img src="images/demo_coffee_house.png"></button>
 
-
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery.ui.css">
-    <link rel="stylesheet" href="css/app.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.js"></script>
-    <script src="js/bootstrap.js"></script>
+</div>
+   -->
+  <!-- Chatbot Popup -->
+  <!-- <div class="chatbot-popup" id="chatbot-popup">
+    <h3>Chat with us!</h3>
+    <p>How can I help you today?</p>
+    <button onclick="closeChat()">Close</button>
+  </div> -->
+  
+  <!-- <script src="script.js"></script> -->
 
 
-
- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
- <footer>
-  <div class="container">
-      <p><font color="black"><b>&copy; 2024 La Nonna. All rights reserved.</font></b></p>
-  </div>
-</footer>
+    <script>
+        const X = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+            
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        X();
+    </script>
 </body>
 </html>

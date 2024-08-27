@@ -1,83 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Demo Coffee House</title>
-
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-	<link rel="stylesheet" type="text/css" href="css/app_about.css">
+    <meta charset="UTF-8"> 
+    <title>Demo Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>Demo Coffee House</h5>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- <div class="banner"> -->
+        <div class="wrapper">
+            <div class="content">
+                <h2>Our Story</h2>
+                <p>
+                Founded in 1999, La Nonna was born from a love for traditional Italian cooking. Our founder, Maria Rossi, grew up in a small village in Italy, where she learned to cook from her grandmother. Inspired by these cherished family recipes, Maria decided to bring the flavors of Italy to Singapore. Today, La Nonna continues to honor those traditions while embracing new culinary innovations.
+                <br><br>
+                La Nonna was created to capture the soul of authentic Italian cooking, time-honored recipes passed down from Italian grandmothers. Our very first outlet opened its doors in November 2006 without much fanfare but gradually accrued a loyal following among enthusiasts looking for understated comfort and good food served with warm Italian hospitality. 
+                <br><br>
+                La Nonna paints the picture of Italian countryside with a modern touch, featuring a traditional bronze oven, deep wood decor, taupe-coloured walls adorned with vintage Italian posters and shelves displaying antique lamps and old wine bottles, reminiscent of the warmth of Grandma’s proudly owned house. 
+                <br><br>
+                La Nonna is not just great for cosy gatherings amongst friends and family, its soft lighting also makes it perfect for a romantic date                <p><b>THAT SITS IN THE HEART OF HOLLAND VILLAGE</b></p>
+                </p>
+                <div class="btn">
+                    <a href="#">Learn More</a>
+                    <a href="#">Sign up</a>
+                </div>                  
+            </div>
+        </div>
+    <!-- </div> -->
+    
 
-
-<nav class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><b>Demo Coffee House</b></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-       	<li><a href="index.html"><b>Home</b></a></li>
-        <li class="active"><a href="about.html"><b>About Us</b></a>
-        <li><a href="menu.html"><b>Menu</b></a>
-        <li><a href="promotion.html"><b>Promotion</b></a></li>
-        <li><a href="reservation.html"><b>Make a reservsation</b></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div id="content">
-          <h1>OUR STORY</h1>
-          <h2>
-            Founded in 1999, La Nonna was born from a love for traditional Italian cooking. Our founder, Maria Rossi, grew up in a small village in Italy, where she learned to cook from her grandmother. Inspired by these cherished family recipes, Maria decided to bring the flavors of Italy to Singapore. Today, La Nonna continues to honor those traditions while embracing new culinary innovations.
-            <br><br>
-            La Nonna was created to capture the soul of authentic Italian cooking, time-honored recipes passed down from Italian grandmothers. Our very first outlet opened its doors in November 2006 without much fanfare but gradually accrued a loyal following among enthusiasts looking for understated comfort and good food served with warm Italian hospitality. 
-            <br><br>
-            La Nonna paints the picture of Italian countryside with a modern touch, featuring a traditional bronze oven, deep wood decor, taupe-coloured walls adorned with vintage Italian posters and shelves displaying antique lamps and old wine bottles, reminiscent of the warmth of Grandma’s proudly owned house. 
-            <br><br>
-            La Nonna is not just great for cosy gatherings amongst friends and family, its soft lighting also makes it perfect for a romantic date.
-          </h2> 
- 				</div>
-			</div>
-		</div>
-	</div>
-
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery.ui.css">
-    <link rel="stylesheet" href="css/app_about.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-
-
- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
- <footer>
-    <div class="container">
-        <p><font color="black"><b>&copy; 2024 La Nonna. All rights reserved.</font></b></p>
-    </div>
-  </footer>
+     <script>
+        const X = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+            
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        X();
+    </script>
 </body>
 </html>
