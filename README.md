@@ -2,4 +2,4 @@
 
 https://bacdillon.github.io/demo-coffee-house/
 
-![alt_text](https://github.com/bacdillon/demo-coffee-house/blob/master/images/DemoCoffeeHouse.jpg)
+![alt_text](https://github.com/bacdillon/demo-coffee-house/blob/master/images/mainjpg)
