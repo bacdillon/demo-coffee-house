@@ -1,104 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <title>Demo Coffee House</title>
-    <link rel="stylesheet" href="main-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital IT Helpdesk Support</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style.css">
-
-
 </head>
-
-<style>
-    .image-button {
-        width: 57px;
-        height: 57px;
-        /* background-image: url('images/DemoCoffeeHouse.png'); */
-        background-image: url('images/DemoCoffeeHouse.png');
-        background-size: cover;
-        border: none;
-        cursor: pointer;
-    }
-</style>
-
 <body>
+
+    <!-- Header Section -->
     <header>
-        <nav>
-            <div class="logo">
-                <h5>Demo Coffee House</h5>
-            </div>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Promotion</a></li>
-                <!-- <li><a>Reservation</a></li> -->
-            </ul>
-            <div class="bar">
-                <div class="bar-1"></div>
-                <div class="bar-2"></div>
-                <div class="bar-3"></div>
-            </div>
-        </nav>
-    </header>
-    <div class="banner">
-        <div class="wrapper">
-            <div class="content">
-                <h2>La Nonna</h2>
-                <p><b>A MODERN TRATTORIA</b></p>
-                <p><b>THAT SITS IN THE HEART OF HOLLAND VILLAGE</b></p>
-<!--                 <div class="btn">
-                    <a href="#">Learn More</a>
-                    <a href="#">Sign up</a>
-                </div>                   -->
+        <div class="container">
+<!--             <nav>
+                <img src="logo.jpg" alt="Company Logo" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav> -->
+            <div class="hero-content">
+                <h1>La Nonna</h1>
+                <p>A MODERN TRATTORIA<BR>THAT SITS IN THE HEART OF HOLLAND VILLAGE</p>
+                <!-- <a href="#contact" class="btn">Contact Us Now</a> -->
+                <a href="winniebot.html" class="btn">Chat with Us Now</a>
+
             </div>
         </div>
-    </div>
-    
+    </header>
 
-  <!-- Chatbot -->
-  <div class="chatbot-icon">
-    <!-- <button class="image-button" onclick="myFunction()"><img src="images/demo_coffee_house.png" id="chatbot-icon-image"></button> -->
-    <button class="image-button" onclick="myFunction()"></button>
+    <!-- Services Section -->
+ <!--    <section id="services">
+        <div class="container">
+            <h2>Our IT Support Services</h2>
+            <div class="service-box">
+                <div class="service">
+                    <img src="service1.png" alt="Service 1">
+                    <h3>Technical Assistance</h3>
+                    <p>Round-the-clock technical troubleshooting and support for your team.</p>
+                </div>
+                <div class="service">
+                    <img src="service2.png" alt="Service 2">
+                    <h3>Network Support</h3>
+                    <p>Reliable network maintenance and monitoring to avoid downtime.</p>
+                </div>
+                <div class="service">
+                    <img src="service3.png" alt="Service 3">
+                    <h3>Data Security</h3>
+                    <p>Ensure the safety of your company's data with our robust security solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+    <!-- About Section -->
+<!--     <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="about-us.jpg" alt="About Us Image">
+                <div class="about-text">
+                    <p>We are a leading IT support provider with over 15 years of experience. Our team is dedicated to ensuring your business remains operational and efficient through our expert technical services. We pride ourselves on delivering exceptional customer support around the clock.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-</div>
-  
-    <script>
-    function myFunction() {
-      window.open("winniebot.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
-    }
-    </script>
-  
-  
-   <!-- Chatbot Icon -->
- <!--   <div class="chatbot-icon">
-    <img src="./images/demo_coffee_house.png" alt="Chatbot Icon" id="chatbot-icon-image">
-    <button onclick="myFunction()"><img src="images/demo_coffee_house.png"></button>
-
-</div>
-   -->
-  <!-- Chatbot Popup -->
-  <!-- <div class="chatbot-popup" id="chatbot-popup">
-    <h3>Chat with us!</h3>
-    <p>How can I help you today?</p>
-    <button onclick="closeChat()">Close</button>
-  </div> -->
-  
-  <!-- <script src="script.js"></script> -->
+    <!-- Contact Section -->
+ <!--    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+ -->
 
 
-    <script>
-        const X = () => {
-            const menu = document.querySelector('.bar');
-            const nav = document.querySelector('.menu');
-            
-            menu.addEventListener('click', () => {
-               menu.classList.toggle('bar-active');
-                nav.classList.toggle('nav-active');
-            });
-        }
-        X();
-    </script>
+    <!-- Footer -->
+<!--     <footer>
+        <div class="container">
+
+        </div>
+
+        <div class="container">
+ 
+        </div>
+    </footer> -->
+
 </body>
 </html>

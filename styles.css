@@ -1,59 +1,245 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-.chatbot-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 80px;
-    height: 80px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-/*     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- */    z-index: 1000;
+body {
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.chatbot-icon img {
-    width: 33px;
-    height: 33px;
-    /* border-radius: 10px; */
-
-}
-
-.chatbot-popup {
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    width: 300px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none;
-    z-index: 1000;
-}
-
-.chatbot-popup h3 {
-    margin-top: 0;
-}
-
-.chatbot-popup button {
-    background-color: #164b80;
+/* Header Styles */
+header {
+    /* background-image: url('https://via.placeholder.com/1500x600'); */
+    background-image: url('images/main.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
-.chatbot-popup button:hover {
-    background-color: #94b7dc;
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #e5533b;
+}
+
+/* Services Section */
+#services {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e5533b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-box {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img,
+    .about-text {
+        width: 100%;
+    }
 }
