@@ -14,10 +14,10 @@ body {
 /* Header Styles */
 header {
     /* background-image: url('https://via.placeholder.com/1500x600'); */
-    background-image: url('images/main.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(246, 239, 239);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -64,9 +64,15 @@ nav {
     margin-bottom: 20px;
 }
 
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: rgb(253, 250, 250);
 }
 
 .btn {
