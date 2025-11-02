@@ -5,4 +5,4 @@
 [![IMAGE ALT TEXT HERE](https://github.com/bacdillon/demo-coffee-house/blob/master/main.jpg)](https://bacdillon.github.io/demo-coffee-house/)
 
 
-https://github.com/bacdillon/demo-coffee-house/blob/master/index.html
+
